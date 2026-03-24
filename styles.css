@@ -756,3 +756,174 @@ footer {
         width: 220px;
     }
 }
+
+/* ── Hero Badge ──────────────────────────────────────────────────────── */
+.hero-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 100px;
+    padding: 0.35rem 0.9rem;
+    margin-bottom: 1.25rem;
+}
+
+/* ── iPhone Mockup ───────────────────────────────────────────────────── */
+.iphone-duo {
+    position: relative;
+    width: 340px;
+    height: 520px;
+}
+
+.iphone-mockup {
+    position: absolute;
+    width: 220px;
+    background: #1c1c1e;
+    border-radius: 44px;
+    border: 1.5px solid rgba(255,255,255,0.12);
+    box-shadow:
+        0 0 0 1px rgba(0,0,0,0.9),
+        0 40px 80px rgba(0,0,0,0.8),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+    padding: 14px 10px 18px;
+    overflow: visible;
+}
+
+.iphone-front {
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.iphone-back {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotate(-6deg);
+    opacity: 0.85;
+}
+
+/* Dynamic Island */
+.iphone-island {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 26px;
+    background: #000;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+/* Screen */
+.iphone-screen {
+    border-radius: 32px;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+}
+
+.iphone-screen img {
+    width: 100%;
+    display: block;
+    border-radius: 32px;
+}
+
+/* Side buttons */
+.iphone-btn {
+    position: absolute;
+    background: #2c2c2e;
+    border-radius: 3px;
+}
+
+.iphone-btn-right {
+    right: -3px;
+    top: 120px;
+    width: 3px;
+    height: 70px;
+}
+
+.iphone-btn-left1 {
+    left: -3px;
+    top: 100px;
+    width: 3px;
+    height: 40px;
+}
+
+.iphone-btn-left2 {
+    left: -3px;
+    top: 155px;
+    width: 3px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .iphone-duo {
+        width: 260px;
+        height: 420px;
+    }
+
+    .iphone-mockup {
+        width: 180px;
+    }
+}
+
+/* ── Hero Copy & Stats ───────────────────────────────────────────────── */
+.hero-copy {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    max-width: 90%;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.hero-stat span {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-transform: none;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.1rem;
+}
+
+.hero-stat-divider {
+    width: 1px;
+    height: 32px;
+    background: var(--border-color);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-copy {
+        max-width: 100%;
+    }
+
+    .hero-stats {
+        gap: 1rem;
+    }
+}
